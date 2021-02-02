@@ -1,0 +1,47 @@
+<?xml version= "1.0"?>
+<!--
+* File name:   tmwc_UoL_Board_Compile.tmf
+*
+* Description: Automatically generated Tasks Window custom flow.
+****************************************************************
+-->
+<tasks flowname = "UoL Board Compile" type = "user">
+   <predefined_tasks>
+       <id>add_file</id>
+       <id>addremove_file</id>
+       <id>analysis_synthesis_report</id>
+       <id>analysis_synthesis_settings</id>
+       <id>archive_project</id>
+       <id>assembler_edit</id>
+       <id>assembler_report</id>
+       <id folder = "opened">assign_constraints</id>
+       <id folder = "opened">create_design</id>
+       <id>create_project</id>
+       <id>design_partitions</id>
+       <id>edit_pin_planner_assignments</id>
+       <id>fitter_report</id>
+       <id>fitter_settings</id>
+       <id>fsm_viewer</id>
+       <id>global_settings</id>
+       <id>netlist_viewers</id>
+       <id>open_chip_planner</id>
+       <id>open_file</id>
+       <id>open_project</id>
+       <id>partition_merge_report</id>
+       <id folder = "opened">project</id>
+       <id>rtl_viewer</id>
+       <id>start_analysis_elaboration</id>
+       <id>start_analysis_synthesis</id>
+       <id>start_assembler</id>
+       <id>start_fitter</id>
+       <id folder = "opened">start_full_compilation</id>
+       <id>start_partition_merge</id>
+       <id>start_programming</id>
+       <id>start_timing_analyzer</id>
+       <id>tech_map_viewer_post_fit</id>
+       <id>tech_map_viewer_post_map</id>
+       <id>timequest_assignments</id>
+       <id>timing_report</id>
+       <id>timing_settings</id>
+   </predefined_tasks>
+</tasks>

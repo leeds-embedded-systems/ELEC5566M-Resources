@@ -1,0 +1,33 @@
+<?xml version= "1.0"?>
+<!--
+* File name:   tmwc_UoL_Simulation_Compile.tmf
+*
+* Description: Automatically generated Tasks Window custom flow.
+****************************************************************
+-->
+<tasks flowname = "UoL Simulation Compile" type = "user">
+   <predefined_tasks>
+       <id>add_file</id>
+       <id>addremove_file</id>
+       <id>analysis_synthesis_report</id>
+       <id>analysis_synthesis_settings</id>
+       <id>archive_project</id>
+       <id folder = "opened">assign_constraints</id>
+       <id folder = "opened">create_design</id>
+       <id>create_project</id>
+       <id>eda_rtl_simulation_edit</id>
+       <id>fsm_viewer</id>
+       <id>global_settings</id>
+       <id>netlist_viewers</id>
+       <id>open_file</id>
+       <id>open_project</id>
+       <id folder = "opened">project</id>
+       <id>rtl_viewer</id>
+       <id>start_analysis_elaboration</id>
+       <id folder = "opened">start_analysis_synthesis</id>
+       <id>start_eda_rtl_simulation</id>
+       <id folder = "opened">start_full_compilation</id>
+       <id>start_partition_merge</id>
+       <id>tech_map_viewer_post_map</id>
+   </predefined_tasks>
+</tasks>
