@@ -70,16 +70,16 @@ end
 
 
 /*
- * Example of constructing a 7-segment decoder using a case statement
+ * Example of a four way 8-bit multiplexer using a case statement
  */
 
 always @ * begin
-    case (hexValue) //case ( expression )
-        4'h0: sevenSeg = 7'b0111111; // constantExpr: action;
-        4'h1: sevenSeg = 7'b0000110; // constantExpr: action;
-        4'h2: sevenSeg = 7'b1011011; // constantExpr: action;
+    case case ( expression )
+        2'd0: out = in1; // constantExpr: action;
+        2'd1: out = in2; // constantExpr: action;
+        2'd2: out = in3; // constantExpr: action;
         ... // And so on.
-        default: sevenSeg = 7'b0000000;  // default: action; /*!\tikzmark{se_sevensegment}!*/
+        default: result = 8'b0000000;  // default: action; /*!\tikzmark{se_sevensegment}!*/
     endcase
 end
 
