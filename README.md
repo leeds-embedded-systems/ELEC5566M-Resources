@@ -1,6 +1,6 @@
 # Resources for ELEC5566M
 
-University-provided resources for ELEC5566M FPGA Design Module
+University-provided resources for ELEC5566M FPGA Design at the University of Leeds.
 
 Some files must be installed in a particular location for the software to be able to find them.
 
