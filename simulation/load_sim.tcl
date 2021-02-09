@@ -19,9 +19,6 @@
 # scripts, preparing memory contents, setting up the simulator.
 #
 
-set script_path [ file dirname [ file normalize [ info script ] ] ]
-do $script_path/modelsim.tcl
-
 #
 # First lets clean up any old NativeLink backup files. Quartus
 # creates a new backup file every time it runs. It never deletes
