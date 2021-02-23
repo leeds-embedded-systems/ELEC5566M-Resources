@@ -3,7 +3,8 @@ reg        clock;
 reg        reset;
 reg        serialIn;
 wire [3:0] parallelOut;
-//Instantiate DUT. You could have a go making this module if you want, though you //might want to look at next-weeks lab notes to find out about parameterised hardware
+//Instantiate DUT. You could have a go making this module if you want, though you
+//might want to look at next-weeks lab notes to find out about parameterised hardware
 ShiftRegisterNBit #(
     .WIDTH    (4),   //4-bit shift reg
     .MSB_FIRST(1)    //MSB first if 1, LSB first if 0.
