@@ -27,5 +27,6 @@ end
 
 //Initialize with a structured file using Verilog Attribute
 //  - This is Quartus specific.
-(* ram_init_file = "ram.mif" *) reg [7:0] ram [0:15];
+(* ram_init_file = "ram.mif" *)
+reg [7:0] ram [0:15];
 
