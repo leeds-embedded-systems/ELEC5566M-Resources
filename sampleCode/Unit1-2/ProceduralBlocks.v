@@ -74,7 +74,7 @@ end
  */
 
 always @ * begin
-    case case ( expression )
+    case ( expression )
         2'd0: out = in1; // constantExpr: action;
         2'd1: out = in2; // constantExpr: action;
         2'd2: out = in3; // constantExpr: action;
