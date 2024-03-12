@@ -1,5 +1,5 @@
 /*
- * Avalon-MM Slave Template
+ * Avalon-MM Agent Template
  * ------------------------------------
  * By: Thomas Carpenter
  * For: University of Leeds
@@ -7,7 +7,7 @@
  *
  * Description
  * ------------
- * This module implements a basic slave configuration status interface
+ * This module implements a basic agent configuration status interface
  * compatible with the Altera Avalon Memory Mapped Interface standard.
  *
  * Such interfaces are typically used in large processor controlled
@@ -17,7 +17,7 @@
  * ARM CPU on the Cyclone V SoC.
  */
 
-module AvalonMMSlaveTemplate (                                                  /*!\tikzmark{avmm_codeedge}!*/
+module AvalonMMAgentTemplate (                                                  /*!\tikzmark{avmm_codeedge}!*/
     input             clock,
     input             reset,
     //Typical CSR Interface
