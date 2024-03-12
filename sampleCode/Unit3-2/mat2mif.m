@@ -29,12 +29,13 @@ if any(data_sign_errors)
         data_sign_errors(1));
 end
 
-% % Calculate number of hex digits required for memory_width
+% Check filename valid
 if ~endsWith(filename,'.mif')
     filename = [filename '.mif'];
 end
-fileID = fopen(filename,'w');
 
+% Generate output file
+fileID = fopen(filename,'w');
 if fileID == -1
     error('Failed to open file.')
 end
