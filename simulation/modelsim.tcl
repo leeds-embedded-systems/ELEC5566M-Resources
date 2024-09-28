@@ -21,7 +21,7 @@
 #proc external_editor {filename linenumber} { exec C:/Program\ Files\ (x86)/Notepad++/notepad++.exe -n$linenumber $filename }
 
 # Uncomment this to create a new process called external_editor which loads VS Code (change path as required) at the correct line for any error messages
-#proc external_editor {filename linenumber} { exec C:/Program\ Files/Microsoft\ VS\ Code/Code.exe --goto $filename:$linenumber
+#proc external_editor {filename linenumber} { exec C:/Program\ Files/Microsoft\ VS\ Code/Code.exe --goto $filename:$linenumber }
 
 # Uncomment ths to tell ModelSim that we should use the external_editor function when openning files
 #set PrefSource(altEditor) external_editor
