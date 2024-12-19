@@ -10,7 +10,7 @@
     <config name='main_pll_c2_internal' value='4' />
     <config name='main_pll_c3' value='511' />
     <config name='main_pll_c4' value='511' />
-    <config name='main_pll_c5' value='35' />
+    <config name='main_pll_c5' value='17' />
     <config name='l4_mp_clk_div' value='0' />
     <config name='l4_sp_clk_div' value='0' />
     <config name='periph_pll_m' value='39' />

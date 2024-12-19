@@ -1,4 +1,4 @@
-// (C) 2001-2017 Intel Corporation. All rights reserved.
+// (C) 2001-2023 Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files from any of the foregoing (including device programming or simulation 
@@ -28,8 +28,8 @@ module HPSWrapper_arm_hps_fpga_interfaces(
  ,output wire [9 - 1 : 0 ] loanio_gpio_loanio2_o
 // h2f_reset
  ,output wire [1 - 1 : 0 ] h2f_rst_n
-// h2f_user0_clock
- ,output wire [1 - 1 : 0 ] h2f_user0_clk
+// f2h_cold_reset_req
+ ,input wire [1 - 1 : 0 ] f2h_cold_rst_req_n
 // h2f_lw_axi_clock
  ,input wire [1 - 1 : 0 ] h2f_lw_axi_clk
 // h2f_lw_axi_master
@@ -178,10 +178,10 @@ cyclonev_hps_interface_loan_io loan_io_inst(
 
 
 cyclonev_hps_interface_clocks_resets clocks_resets(
- .f2h_pending_rst_ack({
+ .f2h_warm_rst_req_n({
     1'b1 // 0:0
   })
-,.f2h_warm_rst_req_n({
+,.f2h_pending_rst_ack({
     1'b1 // 0:0
   })
 ,.f2h_dbg_rst_req_n({
@@ -191,10 +191,7 @@ cyclonev_hps_interface_clocks_resets clocks_resets(
     h2f_rst_n[0:0] // 0:0
   })
 ,.f2h_cold_rst_req_n({
-    1'b1 // 0:0
-  })
-,.h2f_user0_clk({
-    h2f_user0_clk[0:0] // 0:0
+    f2h_cold_rst_req_n[0:0] // 0:0
   })
 );
 

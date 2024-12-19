@@ -1,4 +1,4 @@
-//Legal Notice: (C)2018 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2024 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -25,6 +25,7 @@ module HPSWrapper_baremetal (
                                chipselect,
                                clk,
                                clken,
+                               debugaccess,
                                freeze,
                                reset,
                                reset_req,
@@ -45,6 +46,7 @@ module HPSWrapper_baremetal (
   input            chipselect;
   input            clk;
   input            clken;
+  input            debugaccess;
   input            freeze;
   input            reset;
   input            reset_req;
@@ -55,7 +57,7 @@ module HPSWrapper_baremetal (
 wire             clocken0;
 wire    [ 31: 0] readdata;
 wire             wren;
-  assign wren = chipselect & write & clken;
+  assign wren = chipselect & write & debugaccess;
   assign clocken0 = clken & ~reset_req;
   altsyncram the_altsyncram
     (

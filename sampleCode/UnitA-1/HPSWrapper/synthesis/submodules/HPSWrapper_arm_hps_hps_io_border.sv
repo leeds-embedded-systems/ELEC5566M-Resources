@@ -1,4 +1,4 @@
-// (C) 2001-2017 Intel Corporation. All rights reserved.
+// (C) 2001-2023 Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files from any of the foregoing (including device programming or simulation 
@@ -55,9 +55,6 @@ module HPSWrapper_arm_hps_hps_io_border(
  ,inout wire [1 - 1 : 0 ] hps_io_gpio_inst_LOANIO50
 );
 
-wire [22 - 1 : 0] intermediate;
-wire [63 - 1 : 0] floating;
-
 assign hps_io_sdio_inst_CMD = intermediate[1] ? intermediate[0] : 'z;
 assign hps_io_sdio_inst_D0 = intermediate[3] ? intermediate[2] : 'z;
 assign hps_io_sdio_inst_D1 = intermediate[5] ? intermediate[4] : 'z;
@@ -70,6 +67,10 @@ assign hps_io_gpio_inst_GPIO53 = intermediate[15] ? intermediate[14] : 'z;
 assign hps_io_gpio_inst_GPIO54 = intermediate[17] ? intermediate[16] : 'z;
 assign hps_io_gpio_inst_LOANIO49 = intermediate[19] ? intermediate[18] : 'z;
 assign hps_io_gpio_inst_LOANIO50 = intermediate[21] ? intermediate[20] : 'z;
+
+wire [22 - 1 : 0] intermediate;
+
+wire [63 - 1 : 0] floating;
 
 cyclonev_hps_peripheral_sdmmc sdio_inst(
  .SDMMC_DATA_I({

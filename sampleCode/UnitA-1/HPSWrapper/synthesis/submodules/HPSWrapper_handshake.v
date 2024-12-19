@@ -1,4 +1,4 @@
-//Legal Notice: (C)2018 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2024 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -304,15 +304,18 @@ reg     [ 31: 0] readdata;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-        begin
           d1_data_in <= 0;
-          d2_data_in <= 0;
-        end
       else if (clk_en)
-        begin
           d1_data_in <= data_in;
+    end
+
+
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d2_data_in <= 0;
+      else if (clk_en)
           d2_data_in <= d1_data_in;
-        end
     end
 
 

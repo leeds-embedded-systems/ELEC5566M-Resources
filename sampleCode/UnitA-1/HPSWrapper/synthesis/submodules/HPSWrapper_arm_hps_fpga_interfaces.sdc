@@ -1,4 +1,3 @@
-create_clock -period 20.0 [get_pins -compatibility_mode *|fpga_interfaces|clocks_resets|h2f_user0_clk]
 # These false paths fix a problem with the HPS timing library for the F2SDRAM bridge.
 # This issue only affects timing analysis. There are no functionality problems with the bridge
 set_false_path -from [get_registers {*fpga_interfaces|f2sdram~FF_3768}]

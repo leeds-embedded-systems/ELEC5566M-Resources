@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 
 SPDX-License-Identifier:    BSD-3-Clause
 
@@ -99,7 +99,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define __RW_MGR_CONTENT_ac_mrs2 0x100A0218
 
 /*
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 
 SPDX-License-Identifier:    BSD-3-Clause
 
